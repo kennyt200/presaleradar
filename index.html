@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PresaleRadar</title>
+<meta name="description" content="PresaleRadar finds concert presales for the artists you listen to.">
+<style>
+  :root {
+    --bg: #FBF8F1; --ink: #1B1710; --ink-2: #4F473A; --accent: #8A6B14;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0C0A05; --ink: #F3EEDF; --ink-2: #BDB4A0; --accent: #D4B45A; color-scheme: dark; }
+  }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding-inline: 18px; padding-block: 56px;
+  }
+  main { max-width: 560px; margin: 0 auto; }
+  .brand { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 12px; }
+  h1 { font: 600 clamp(28px, 7vw, 40px)/1.15 Georgia, "Times New Roman", serif; margin: 0 0 14px; text-wrap: balance; }
+  p { color: var(--ink-2); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">PresaleRadar</p>
+  <h1>Concert presales for the artists you actually listen to</h1>
+  <p>PresaleRadar reads your music library or a screenshot of your top artists, finds their
+  upcoming shows near you, and alerts you before presales open.</p>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <p>Support: presaleradarapp@gmail.com</p>
+</main>
+</body>
+</html>
