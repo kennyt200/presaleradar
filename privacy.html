@@ -85,7 +85,7 @@
 <main>
   <p class="brand">PresaleRadar</p>
   <h1>Privacy Policy</h1>
-  <p class="dates">Effective October 5, 2026 · Last updated October 7, 2026</p>
+  <p class="dates">Effective October 5, 2026 · Last updated October 10, 2026</p>
 
   <p>PresaleRadar is an Android app that finds concert presales for the artists you listen to.
   It has no accounts, no ads and no analytics. This page explains what the app reads, what
@@ -119,7 +119,9 @@
     <li><strong>Your location, only when you ask.</strong> If you tap "Use my current location",
     the app takes a single reading. There is no background tracking. The reading is rounded to
     about 1.5 miles and turned into a city name by your phone's built-in geocoding service, which
-    Google provides on most Android phones. You can type a city or zip code instead.</li>
+    Google provides on most Android phones. You can type a city or ZIP code instead: our server
+    looks it up in a table of US ZIP codes and doesn't store it. Only if our server can't find it,
+    and you have allowed location access, does the phone's geocoding service try instead.</li>
     <li><strong>Stored on your phone.</strong> Your settings, artist list and recent results are
     saved in the app's own storage. Uninstalling the app or clearing its data removes them.</li>
   </ul>
@@ -136,6 +138,12 @@
           <td>Our server. Ticketmaster directly, only if our server can't be reached.</td>
           <td>To find concerts near you</td>
           <td>Not stored for this purpose</td>
+        </tr>
+        <tr>
+          <td>A city or ZIP code you type</td>
+          <td>Our server</td>
+          <td>To find where it is</td>
+          <td>Not stored</td>
         </tr>
         <tr>
           <td>Your artist names, rounded location and search distance</td>
@@ -238,7 +246,8 @@
   or request.</p>
 
   <footer>PresaleRadar is an independent app and is not affiliated with Ticketmaster, SeatGeek,
-  Spotify or any artist.</footer>
+  Spotify or any artist. ZIP code data is from <a href="https://www.geonames.org">GeoNames</a>,
+  licensed CC BY 4.0.</footer>
 </main>
 </body>
 </html>
